@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Profile Enhancer",
+  "version": "1.0",
+  "description": "Displays company match score and account status on LinkedIn profiles",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/in/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
